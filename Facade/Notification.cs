@@ -10,7 +10,7 @@ namespace Facade
     {
         void INotification.Notify(Pizza pizza)
         {
-            Console.WriteLine($"Pizza {pizza.KindOfPizza} making process is over.");
+            Console.WriteLine($"Pizza {pizza.PizzaType} making process is over.");
         }
     }
 }
