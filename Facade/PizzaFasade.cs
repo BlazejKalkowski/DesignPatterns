@@ -15,11 +15,6 @@
             _makePizza = makePizza;
             _notification = notification;
         }
-        public PizzaFasade()
-        {
-            _makePizza = new MakePizza();
-            _notification = new Notification();
-        }
 
         public async Task OrderAsync(Pizza pizza)
         {
