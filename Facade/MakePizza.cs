@@ -1,6 +1,6 @@
 ﻿namespace Facade
 {
-    public interface IMakePizza
+    internal interface IMakePizza
     {
         Task MakeAsync(Pizza pizza);
     }
