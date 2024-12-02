@@ -5,4 +5,3 @@ var orderOfPizza = new PizzaFasade();
 
 await orderOfPizza.OrderAsync(pizza);
 
-Console.WriteLine("Stopped fasade design pattern...");
