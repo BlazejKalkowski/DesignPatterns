@@ -8,7 +8,8 @@
     {
         public async Task MakeAsync(Pizza pizza)
         {
-            Console.WriteLine($"Pizza {pizza.KindOfPizza} is making... We will notify you when process is complete.");
+            Console.WriteLine($"Pizza {pizza.KindOfPizza} is making... " +
+                $"We will notify you when process is complete.");
             await Task.Delay(300);
         }
     }

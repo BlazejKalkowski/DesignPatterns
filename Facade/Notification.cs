@@ -5,6 +5,7 @@ namespace Facade
     {
         void Notify(Pizza pizza);
     }
+
     internal class Notification : INotification
     {
         void INotification.Notify(Pizza pizza)

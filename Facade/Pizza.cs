@@ -3,12 +3,12 @@
     public class Pizza
     {
         public int Id { get; set; }
-        public KindOfPizza KindOfPizza { get; set; }
+        public PizzaType KindOfPizza { get; set; }
     }
 
-    public enum KindOfPizza
+    public enum PizzaType
     {
-        Margharitta,
+        Margherita,
         Capriciosa,
         Diavola
     }

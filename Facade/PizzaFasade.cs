@@ -4,21 +4,27 @@
     {
         Task OrderAsync(Pizza pizza);
     }
+
     internal class PizzaFasade : IPizza
     {
         IMakePizza _makePizza;
-        INotification _notify;
+        INotification _notification;
 
+        public PizzaFasade(IMakePizza makePizza, INotification notification)
+        {
+            _makePizza = makePizza;
+            _notification = notification;
+        }
         public PizzaFasade()
         {
             _makePizza = new MakePizza();
-            _notify = new Notification();
+            _notification = new Notification();
         }
 
         public async Task OrderAsync(Pizza pizza)
         {
             await _makePizza.MakeAsync(pizza);
-            _notify.Notify(pizza);
+            _notification.Notify(pizza);
         }
     }
 }
