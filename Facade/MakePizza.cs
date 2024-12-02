@@ -4,6 +4,7 @@
     {
         Task MakeAsync(Pizza pizza);
     }
+
     internal class MakePizza : IMakePizza
     {
         public async Task MakeAsync(Pizza pizza)
